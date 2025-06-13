@@ -46,7 +46,7 @@ uint8_t *ProcessManager::processData(DataSet *ds, int *dlen)
   //#min_humid = (int) hdata->getMin();
 
   // Example) getting the minimum power value
-  sum_power = 0;
+  int sum_power = 0;
   for (int i=0; i<num; i++)
   {
     house = ds->getHouseData(i);
